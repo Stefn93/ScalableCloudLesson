@@ -1,5 +1,8 @@
 #!/bin/bash
 
+RUN_SESSION=20201126
+GCP_PROJECT="unibo-demo"
+
 GCS_BUCKET_NAME=${GCP_PROJECT}-data-bucket
 GCS_BUCKET_ZONE=europe-west1
 GCS_BUCKET_CLASS=regional
