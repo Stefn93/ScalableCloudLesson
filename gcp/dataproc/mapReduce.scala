@@ -5,10 +5,12 @@ import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder().appName("spark-bigquery-demo").getOrCreate()
 */
 
+
 // Use the Cloud Storage bucket for temporary BigQuery export data used
 // by the connector.
-// val bucket = "[BUCKET_NAME]"
-val bucket = "test-mapReduce-BigqueryConnector"
+// TODO change here >> val bucket = "[BUCKET_NAME]"
+
+val bucket = "test-mapreduce-bigquery-connector"
 spark.conf.set("temporaryGcsBucket", bucket)
 
 // Load data in from BigQuery. See

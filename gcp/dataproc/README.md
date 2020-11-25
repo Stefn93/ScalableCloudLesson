@@ -16,6 +16,7 @@ Provide the BigQuery connector to your application in one of the following ways:
     `--jars=gs://spark-lib/bigquery/spark-bigquery-latest.jar`
 - Include the jar in your Scala or Java Spark application as a dependency 
 
+
 ## Create Resources
 Use the bq command to create the `wordcount_dataset` in your project:
 ```sh
