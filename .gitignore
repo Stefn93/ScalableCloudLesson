@@ -1,0 +1,4 @@
+.vscode/
+.metals/
+metastore_db/
+*.log
