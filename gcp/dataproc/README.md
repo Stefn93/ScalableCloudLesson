@@ -35,7 +35,7 @@ gsutil mb gs://[BUCKET_NAME]
     - copy `mapReduce.scala` file in the cluster or git clone this folder inside the cluster
     - launch the spark-shell passing the Bigquery jar connector
         ```sh
-        $ spark-shell --jars=gs://spark-lib/bigquery/spark-bigquery-latest.jar
+        $ spark-shell --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar
         ```
     - launch the wordcount.scala 
          ```sh
