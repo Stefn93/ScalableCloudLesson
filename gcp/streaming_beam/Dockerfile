@@ -29,4 +29,5 @@ COPY streaming_beam.py .
 ENV FLEX_TEMPLATE_PYTHON_REQUIREMENTS_FILE="${WORKDIR}/requirements.txt"
 ENV FLEX_TEMPLATE_PYTHON_PY_FILE="${WORKDIR}/streaming_beam.py"
 
+RUN pip install apache-beam[gcp]
 RUN pip install -U -r ./requirements.txt
