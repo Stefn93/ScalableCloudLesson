@@ -1,5 +1,5 @@
 export PROJECT="$(gcloud config get-value project)"
-export GOOGLE_APPLICATION_CREDENTIALS="~/dataflow-flex.json"
+export GOOGLE_APPLICATION_CREDENTIALS="~/gcp/sa/dataflow-flex.json"
 export BUCKET="dataflow-flex-template-bucket"
 export TOPIC="flex-topic"
 export SUBSCRIPTION="projects/$PROJECT/subscriptions/ratings"
