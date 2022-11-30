@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RUN_SESSION=20211207
+RUN_SESSION=20221130
 PREFIX="unibo-demo"
 
 GCP_PROJECT="formazione-stefano-romanazzi"

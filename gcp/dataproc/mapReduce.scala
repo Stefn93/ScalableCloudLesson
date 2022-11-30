@@ -9,7 +9,7 @@ val spark = SparkSession.builder().appName("spark-bigquery-demo").getOrCreate()
 // Use the Cloud Storage bucket for temporary BigQuery export data used
 // by the connector.
 
-val bucket = "unibo-demo-data-bucket-20211207"
+val bucket = "unibo-demo-data-bucket-20221130"
 spark.conf.set("temporaryGcsBucket", bucket)
 
 // Load data in from BigQuery. See
@@ -25,4 +25,4 @@ wordCountDF.show()
 wordCountDF.printSchema()
 
 // Saving the data to BigQuery.
-wordCountDF.write.format("bigquery").option("table","unibo_demo_20211207.wordcount_output").save()
+wordCountDF.write.format("bigquery").option("table","unibo_demo_20221130.wordcount_output").save()
